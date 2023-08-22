@@ -1,0 +1,19 @@
+#!/bin/bash
+usr='devops'
+for i in `cat remote_host`
+do
+   scp multi-os.sh $usr@$i:/tmp
+   ssh $usr@$i /tmp/multi-os.sh
+
+
+done
+in/bash
+
+usr='devops'
+for i in `cat remote_host`
+do 
+   scp multi-os.sh $usr@$i:/tmp
+   ssh $usr@$i /tmp/multi-os.sh
+   
+
+done
